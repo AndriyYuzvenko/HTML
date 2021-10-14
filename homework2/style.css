@@ -1,0 +1,47 @@
+.name{
+    width: 40%;
+    border: 5px solid #756363;
+    text-align: center;
+    margin-left: 30%;
+    background: linear-gradient(to right ,#000000, #e00d0d,#ffffff,#4e7c27);
+}
+.teams,.sostav{
+    display: flex;
+    margin-top: 20px;
+
+}
+.teams{
+    border: 5px solid #000000;
+}
+.team {
+    width: 50%;
+    text-align: center;
+
+
+}
+.team > img{
+    border-radius: 50%;
+    padding-top: 20px;
+}
+.team > p{
+    font-size: 22px;
+}
+.shakhtar {
+    background: linear-gradient(to top, #e00d0d ,#000000);
+}
+.verder {
+    background: linear-gradient(to top, #ffffff, #4e7c27);
+}
+
+.sostav >nav{
+    width: 33.333%;
+}
+nav > .maket{
+    width: 360px;
+}
+th{
+    text-align: start;
+}
+td > img{
+    width: 23px;
+}
