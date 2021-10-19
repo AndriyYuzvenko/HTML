@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father {
+            border: 2px solid red;
+            width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+
+        .child {
+            background-color: silver;
+            height: 100px;
+        }
+
+        .a {
+            width: 100%;
+            height: 100px;
+        }
+
+        .childOne {
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 3;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+
+        .b {
+            width: 100%;
+        }
+
+        .f {
+            flex-grow: 1;
+            background-color: silver;
+        }
+
+        .c, .d, .e {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="child a"></div>
+    <div class="childOne">
+        <div class="child b"></div>
+        <div class="child c"></div>
+        <div class="child d"></div>
+        <div class="child e"></div>
+    </div>
+    <div class="f"></div>
+</div>
+</body>
+</html>

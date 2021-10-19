@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father {
+            border: 2px solid red;
+            width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+
+        .child {
+            background-color: silver;
+
+        }
+
+        .header, .nav, .footer {
+            width: 100%;
+            height: 100px;
+
+        }
+
+        .main {
+            flex-grow: 3;
+            height: 300px;
+        }
+
+        .aside {
+            flex-grow: 1;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="child header"></div>
+    <div class="child nav"></div>
+    <div class="child main"></div>
+    <div class="child aside"></div>
+    <div class="child footer"></div>
+</div>
+</body>
+</html>
