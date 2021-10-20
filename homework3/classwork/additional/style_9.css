@@ -1,293 +1,282 @@
 .father {
     border: 5px solid black;
-    width: 82%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     column-gap: 15px;
-    row-gap: 15px;
-    padding: 20px;
     height: auto;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
-.dropbtn{
-    display: none;
-}
+
 .header {
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: space-between;
+    padding: 10px;
+    border-bottom: 5px solid black;
+}
+
+.header > .child {
+    width: 200px;
+    height: 50px;
+}
+
+.a {
+    width: 100%;
+    height: 50px;
 }
 
 .child {
     background-color: silver;
-    border: 3px solid black;
-}
-
-.header > .child {
-    width: 150px;
-    height: 50px;
-}
-
-.menu {
-    flex-grow: 1;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 20px;
-    height: 500px;
 }
 
 .content {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 8;
-    column-gap: 20px;
-    row-gap: 20px;
 }
 
-.menu > .a {
-    width: 100%;
-    height: 50px;
+.menu {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 10px;
+    border-right: 5px solid black;
 }
 
-.maine {
-    width: 100%;
+.menuTwo {
+    flex-grow: 10;
+}
+
+.maneHots {
+    border-bottom: 5px solid black;
+    padding: 10px;
+}
+
+.hots {
+    flex-grow: 1;
     height: 400px;
 }
 
-.s {
-    width: 100%;
+.fourBlock {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 8;
-    column-gap: 20px;
-    row-gap: 20px;
+    flex-grow: 1;
+    padding: 10px;
+    height: auto;
+    column-gap: 10px;
+    box-sizing: border-box;
+    border-bottom: 5px solid black;
 }
 
-.s > .b {
+.fourBlock > .w {
     flex-grow: 1;
     height: 100px;
 }
 
-.five {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 20px;
-    width: 77%;
-
-}
-
-.six {
-    width: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 400px;
-    column-gap: 20px;
-    row-gap: 20px;
-}
-
-.sixx, .ccc {
+.maneTwo {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 20px;
 }
 
-.c, .cq {
-    width: 100%;
+.manyBlock {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    padding: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.d {
+    flex-basis: 49%;
     height: 100px;
 }
 
-.five > .w {
-    flex-basis: 45%;
-    height: 120px;
-}
-
-.end {
+.lateBlock {
+    width: 25%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 10px;
+    border-left: 5px solid black;
+}
+
+.lateBlockEnd {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    box-sizing: border-box;
+
+}
+
+.cc, .cq {
+    width: 100%;
+    height: 70px;
+
+}
+
+.footer {
+    width: 100%;
+    border-top: 5px solid black;
+    padding: 10px;
+    row-gap: 10px;
+    box-sizing: border-box;
+    display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    column-gap: 20px;
-    row-gap: 20px;
+    justify-content: center;
 }
 
-.endOne {
+.footerOne {
     width: 100%;
     height: 50px;
 }
 
-.endTwo {
-    width: 40%;
+.footerTwo {
+    width: 30%;
     height: 50px;
-
 }
-
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
-
-.dropbtn{
-    display: block;
-        border: none;
-        cursor: pointer;
-    }
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-
     .menu {
         display: none;
-        position: absolute;
-        right: 0;
-        background-color:white;
-        min-width: 160px;
-        z-index: 1;
-
-}
-    .menu .a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
     }
-    .menu .a:hover {background-color: #f1f1f1;}
-    .dropdown:hover .menu {display: block;}
-    .dropdown:hover .dropbtn {background-color: #3e8e41;}
-    .s {
-        width: 100%;
+
+    .fourBlock {
         display: flex;
         flex-wrap: wrap;
-        flex-grow: 8;
         column-gap: 20px;
         row-gap: 20px;
     }
 
-    .s > .b {
+    .fourBlock > .w {
         flex-basis: 35%;
-        height: 100px;
+        height: 150px;
     }
 
-    .five {
-        flex-basis: 100%;
-    }
-
-    .six {
-        width: 100%;
+    .maneTwo {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .sixx, .ccc {
-        width: 48%;
+    .manyBlock {
+        width: 100%;
     }
 
-    .c {
+    .lateBlock {
+        width: 100%;
+        display: flex;
+        border-top: 5px solid black;
+        flex-direction: row;
+        height: auto;
+        border-left: 0;
+    }
+
+    .lateBlockEnd {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cc {
         width: 100%;
         height: 100px;
     }
 
-    .ccc > .cc {
+    .qwe {
+        flex-grow: 1;
+        box-sizing: border-box;
+    }
+
+    .cq {
         width: 100%;
-        height: auto;
+        height: 320px;
     }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-    .dropbtn{
-        display: block;
-        border: none;
-        cursor: pointer;
-    }
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-
     .menu {
         display: none;
-        position: absolute;
-        right: 0;
-        background-color:white;
-        min-width: 160px;
-        z-index: 1;
+    }
 
-    }
-    .menu .a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    .menu .a:hover {background-color: #f1f1f1;}
-    .dropdown:hover .menu {display: block;}
-    .dropdown:hover .dropbtn {background-color: #3e8e41;}
     .header {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        column-gap: 20px;
-        row-gap: 20px;
+        row-gap: 10px;
     }
 
     .header > .two {
         width: 100%;
     }
 
-    .s {
-        width: 100%;
+    .fourBlock {
         display: flex;
         flex-wrap: wrap;
-        flex-grow: 8;
         column-gap: 20px;
         row-gap: 20px;
     }
 
-    .s > .b {
+    .fourBlock > .w {
         flex-basis: 35%;
-        height: 100px;
+        height: 150px;
     }
 
-    .five {
-        flex-basis: 100%;
-    }
-
-    .five > .w {
-        flex-basis: 100%;
-        height: 50px;
-    }
-
-    .five > .ww {
-        flex-basis: 30%;
-    }
-
-    .six {
-        width: 100%;
+    .maneTwo {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .manyBlock {
+        width: 100%;
+    }
+
+    .lateBlock {
+        width: 100%;
+        display: flex;
+        border-top: 5px solid black;
+        height: auto;
+        border-left: 0;
+    }
+
+    .lateBlockEnd {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
         height: auto;
     }
 
-    .sixx, .ccc {
+    .cc {
         width: 100%;
+        height: 100px;
     }
 
-    .c {
-        width: 100%;
-        height: 50px;
-    }
-
-    .ccc > .cc {
-        width: 100%;
-
+    .qwe {
+        flex-grow: 1;
+        box-sizing: border-box;
     }
 
     .cq {
-        height: 300px;
+        width: 100%;
+        height: 320px;
+    }
+
+    .manyBlock {
+        flex-basis: 100%;
+    }
+
+    .manyBlock > .d {
+        flex-basis: 100%;
+
+    }
+
+    .manyBlock > .dd {
+        flex-basis: 30%;
     }
 }
