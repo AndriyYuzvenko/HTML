@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father {
+            border: 5px solid #000000;
+            width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
+            row-gap: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        #father__header, #father__footer {
+            width: 100%;
+            background-color: silver;
+            height: 100px;
+        }
+
+        #father__footer {
+            background-color: silver;
+        }
+
+        #father__menu {
+            flex-grow: 1;
+            background-color: silver;
+        }
+
+        .father__post-father {
+            flex-grow: 3;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        .father__post-father__post {
+            width: 100%;
+            height: 200px;
+            background-color: silver;
+        }</style>
+</head>
+<body>
+<div class="father">
+    <div id="father__header"></div>
+    <div id="father__menu"></div>
+    <div class="father__post-father">
+        <div class="father__post-father__post"></div>
+        <div class="father__post-father__post"></div>
+    </div>
+    <div id="father__footer"></div>
+</div>
+</body>
+</html>
