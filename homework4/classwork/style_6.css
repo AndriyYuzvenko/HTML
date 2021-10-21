@@ -1,0 +1,264 @@
+.blue {
+    background-color: #00c3ff;
+}
+
+.silver {
+    background-color: silver;
+}
+
+.dark-blue {
+    background-color: #0b172d;
+}
+
+.lesson {
+    margin: 0 auto;
+    width: 800px;
+    box-sizing: border-box;
+}
+
+.four__blocks {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    column-gap: 10px;
+    justify-content: flex-end;
+
+}
+
+.five__blocks {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+
+.four__blocks .child {
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+
+}
+
+.five__blocks .child {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.child__two {
+    width: 80px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.child__one {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.lorem {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.lorem__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.father {
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    padding: 20px 0 20px 0;
+}
+
+.father__block {
+    border-radius: 10px;
+    border: 1px solid blue;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 20px auto;
+}
+
+.maine {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.maine__content .maine__content-block {
+    display: flex;
+    flex-grow: 1;
+    height: 100px;
+
+}
+
+.maine__content > p {
+    text-align: center;
+}
+
+.maine__content-block {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.father__circle {
+    width: 100%;
+}
+
+.maine__one-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.maine__one {
+    width: 200px;
+    margin: 40px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maine__one:nth-child(2n) {
+    border: 1px solid blue;
+}
+
+.maine__one p {
+    color: silver;
+}
+
+.six__block {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.child__six {
+    width: 30%;
+    text-align: start;
+}
+
+.child__six-one {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.text, .child__six-two {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.child__six-two > .one {
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.child__six-two {
+    border-top: 2px solid blue;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.child__six {
+    border: 2px solid blue;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.border {
+    padding: 10px;
+}
+
+.one__three {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.one__three-qqq {
+    width: 20px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.h1 {
+    width: 100%;
+}
+
+.child__seven-one, .child__seven-two {
+    width: 45%;
+    text-align: start;
+    padding: 0 0 20px 20px;
+    box-sizing: border-box;
+}
+
+.child__seven-one > h2, .child__seven-one > p {
+    color: #00c3ff;
+}
+
+.child__seven-two > h2, .child__seven-two > p {
+    color: #0b172d;
+}
+
+.child__seven-maine {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__one, .footer__line {
+    padding: 20px;
+    display: flex;
+    column-gap: 10px;
+
+}
+
+.footer__one {
+    border-bottom: 1px solid #00c3ff;
+}
+
+.footer__one-one, .footer__one-two, .footer__one-three {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.footer__line-one, .footer__line-two, .footer__line-three, .footer__line-four {
+    height: 5px;
+    width: 50px;
+    border-radius: 10px;
+}
