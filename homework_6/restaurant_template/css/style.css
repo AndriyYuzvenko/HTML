@@ -263,7 +263,7 @@ figcaption .color {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
-    border: 1px solid red;
+
 }
 
 .story__name {
