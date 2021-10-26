@@ -72,4 +72,130 @@
     .father__child img {
         margin-top: 21px;
     }
+    .food{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+
+
+.content{
+    height: auto;
+    flex-direction: column;
+}
+.content .content__story {
+    width: 100%;
+}
+.story__menu{
+    flex-direction: column;
+}
+.content__story .food{
+    margin-top: 0;
+}
+    .content .content__photo{
+        height: 230px;
+        margin-top: 30px;
+        margin-left: -10px;
+    }
+    .content .content__photo .one{
+        width: 137.2px;
+        margin-right: 90px;
+    }
+    .content .content__photo .four{
+        width: 114.06px;
+    }
+    .content .content__photo .two{
+        width: 145.36px;
+        margin-right: 175px;
+        margin-top: 25px;
+    }.content .content__photo .three{
+             width: 137.2px;
+             margin-right: 35px;
+             margin-top: 109px;
+     }
+.action{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .action .action__description {
+        margin-left: 0;
+    }
+    .action .header__button {
+        margin-right: 0px;
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 41px;
+    }
+.action__description h1{
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+}
+    .action__description p{
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+    }
+    .hamburger{
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 0 ;
+    margin-top: 0;
+}
+
+.hamburger__one{
+    padding-left: -20px;
+}
+.hamburger__small{
+    padding: 0 17px;
+}
+.hamburger__photo{
+    width: 150px;
+}
+
+.none,.none-one{
+    display: none;
+}
+.none-two{
+    display: block;
+}
+.mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hamburger__cost p {
+    font-size: 22px;
+    line-height: 25px;
+}
+
+    .reviews__content img{
+        margin-top: 20px;
+    }
+    .reviews__content h1{
+        margin: 5px 0;
+    }
+
+
+
+    .many-photo nav{
+        display: flex;
+        flex-direction: column;
+        row-gap: 17px;
+
+    }
+
+    .cooks{
+        flex-direction: column;
+        row-gap: 17px;
+        margin-top: 80px;
+    }
+    .many-photo > nav > img{
+        width: 100%;
+    }
+.hamburger__one img{
+    width: 100%;
+}
 }

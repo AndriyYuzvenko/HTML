@@ -66,9 +66,11 @@ table {
     display: flex;
     justify-content: space-between;
 }
-.header__menu-mobile{
+
+.header__menu-mobile {
     display: none;
 }
+
 .header__menu {
     display: flex;
     font-style: normal;
@@ -120,7 +122,7 @@ table {
     line-height: 25px;
 }
 
-.header__menu .header__button {
+.header__menu .header__button, .action .header__button {
     background: #FF7400;
     height: 47px;
     display: flex;
@@ -159,33 +161,38 @@ table {
 
 .header__welcome p::before,
 .header__welcome p::after {
-content: "";
+    content: "";
     display: block;
     width: 61px;
     height: 2px;
-    background-color:#C4C4C4;;
+    background-color: #C4C4C4;;
 }
-.header__welcome p::before{
+
+.header__welcome p::before {
     margin-right: 8px;
 }
-.header__welcome p::after{
+
+.header__welcome p::after {
     margin-left: 8px;
 }
-.header__welcome .header__button{
+
+.header__welcome .header__button {
     font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
     background: #FF7400;
     padding: 14px 18px;
-    display:inline-block;
+    display: inline-block;
     margin: 21px 0 0 151px;
 }
+
 .welcome__maine-mobile-two,
 .welcome__maine-mobile-one,
-.header__welcome .one-menu{
+.header__welcome .one-menu {
     display: none;
 }
-.father{
+
+.father {
     display: flex;
     column-gap: 31px;
     position: relative;
@@ -193,39 +200,373 @@ content: "";
     justify-content: center;
 
 }
-.father__child{
+
+.father__child {
     background: white;
-    border: 1px solid red;
     height: 328px;
     width: 349px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
 
 }
-.father__child figcaption,.father__child p{
+
+.father__child figcaption, .father__child p {
     font-family: Tinos;
     font-style: normal;
     font-weight: normal;
     font-size: 26px;
     line-height: 30px;
 }
-.father__child img{
+
+.father__child img {
     width: 109px;
     height: 98px;
     margin-top: 35px;
 }
-.father__child > nav  p{
+
+.father__child > nav p {
     text-align: center;
     color: #656363;
 }
-.father__child nav{
+
+.father__child nav {
     padding: 20px 13px;
 }
-figcaption{
-display: flex;
+
+figcaption {
+    display: flex;
     column-gap: 5px;
 }
-figcaption .color{
+
+figcaption .color {
     color: #BC9060;;
+}
+
+.content {
+    box-sizing: border-box;
+    margin-top: 151px;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.content .content__story {
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content .content__photo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.story__name {
+    display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 62px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.story__name p {
+    color: #BC9060;
+}
+
+.content__story > p {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #656363;
+}
+
+.content__story .story__menu {
+    display: flex;
+    justify-content: center;
+    column-gap: 41px;
+    margin-top: 41px;
+}
+
+.story__number h1 {
+    font-size: 40px;
+    line-height: 54px;
+    color: #BC9060;
+    text-align: center;
+}
+
+.story__number p {
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.content__photo .three, .content__photo .four, .content__photo .one, .content__photo .two {
+    position: absolute;
+}
+
+.content__photo .four {
+    width: 212px;
+    height: 164px;
+    margin-right: 80px;
+    margin-top: 35px;
+}
+
+.content__photo .one {
+    margin-right: 120px;
+}
+
+.content__photo .two {
+    margin-right: 275px;
+    margin-top: 32px;
+}
+
+.content__photo .three {
+    margin-right: 25px;
+    margin-top: 199px;
+}
+
+.action {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85) url("../image/delicious-1866631_1920 1.png") no-repeat center/cover;
+    height: 357px;
+    margin-top: 122px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.action__description h1 {
+    font-size: 52px;
+    line-height: 60px;
+    color: #D67E34;
+}
+
+.action__description p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.action .action__description {
+    margin-left: 165px;
+}
+
+.action .header__button {
+    margin-right: 186px;
+}
+
+.food {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-top: 132px;
+}
+
+.food h1 {
+    font-size: 54px;
+    line-height: 62px;
+}
+
+.food .color {
+    color: #D67E34;
+}
+
+.hamburger {
+    margin-top: 143px;
+    display: flex;
+    column-gap: 29px;
+}
+
+.hamburger__small {
+    display: flex;
+    column-gap: 29px;
+
+}
+
+.hamburger__cost {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.hamburger__two {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.number-hamburger {
+    background: url("../image/bar-1869656_1920 2.png");
+    height: 1034px;
+    margin-top: 152px;
+}
+
+.number-hamburger > h1 {
+    font-size: 54px;
+    line-height: 62px;
+    padding-top: 98px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.number-hamburger__three-block {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 138px;
+}
+
+.number-hamburger__photo img {
+    border-radius: 50%;
+}
+
+.number-hamburger__photo .number {
+    position: absolute;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background: #D67E34;
+    border: 7px solid #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.number-hamburger__one {
+    width: 350px;
+    height: 510px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number-hamburger__photo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 80px
+}
+
+.number-hamburger__one > h1 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 16px;
+    color: #000000;
+}
+
+.number-hamburger__one p {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    padding: 17px 90px;
+}
+
+.number-hamburger__to-order {
+    padding: 14px 67px;
+    background: #D67E34;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-bottom: 29px;
+    color: #FFFFFF;
+}
+
+.number-hamburger__RECOMMENDED {
+    position: absolute;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    padding: 7px 12px;
+    background: #D67E34;
+    margin-right: 224px;
+}
+
+.reviews {
+    height: 550px;
+    background: #E6E5E5;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.none-two{
+    display: none;
+}
+.reviews__content {
+    width: 920px;
+    margin-top: 104px;
+    text-align: center;
+}
+
+.reviews__content p {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.reviews__content img {
+    border-radius: 50%;
+    margin-top: 75px;
+}
+
+.reviews__content h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    margin-top: 17px;
+}
+
+.reviews__content h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 9px;
+    color: #000000;
+}
+
+.many-photo {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.many-photo nav {
+    display: flex;
+    column-gap: 30px;
+
+}
+
+.cooks {
+    display: flex;
+    column-gap: 32px;
+    justify-content: center;
+    margin-top: 107px;
+}
+
+.footer {
+    background: url("../image/st-826688_1920 1.png") no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
 }
