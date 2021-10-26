@@ -1,0 +1,231 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Tinos', serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    height: 100vh;
+    background: url("../image/bg.png") no-repeat center/cover;
+}
+
+.header__top {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu-mobile{
+    display: none;
+}
+.header__menu {
+    display: flex;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    column-gap: 23px;
+    height: 51px;
+    padding-right: 16px;
+    border-right: 1px solid #FFFFFF;
+}
+
+.name__item a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.name__item img {
+    height: 17px;
+}
+
+.header__phone {
+    width: 154px;
+    padding-left: 34px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.header__menu .header__button {
+    background: #FF7400;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    margin-left: 50px;
+}
+
+.header__welcome {
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    color: #D67E35;
+    margin-top: 203px;
+}
+
+.header__welcome .welcome__maine-descop-one {
+    font-size: 50px;
+    line-height: 57px;
+    margin-left: 24px;
+}
+
+.header__welcome .welcome__maine-descop-two {
+    font-size: 80px;
+    line-height: 92px;
+}
+
+.header__welcome p {
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-left: 96px;
+    display: flex;
+    align-items: center;
+}
+
+.header__welcome p::before,
+.header__welcome p::after {
+content: "";
+    display: block;
+    width: 61px;
+    height: 2px;
+    background-color:#C4C4C4;;
+}
+.header__welcome p::before{
+    margin-right: 8px;
+}
+.header__welcome p::after{
+    margin-left: 8px;
+}
+.header__welcome .header__button{
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #FF7400;
+    padding: 14px 18px;
+    display:inline-block;
+    margin: 21px 0 0 151px;
+}
+.welcome__maine-mobile-two,
+.welcome__maine-mobile-one,
+.header__welcome .one-menu{
+    display: none;
+}
+.father{
+    display: flex;
+    column-gap: 31px;
+    position: relative;
+    margin-top: -107px;
+    justify-content: center;
+
+}
+.father__child{
+    background: white;
+    border: 1px solid red;
+    height: 328px;
+    width: 349px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.father__child figcaption,.father__child p{
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+}
+.father__child img{
+    width: 109px;
+    height: 98px;
+    margin-top: 35px;
+}
+.father__child > nav  p{
+    text-align: center;
+    color: #656363;
+}
+.father__child nav{
+    padding: 20px 13px;
+}
+figcaption{
+display: flex;
+    column-gap: 5px;
+}
+figcaption .color{
+    color: #BC9060;;
+}
