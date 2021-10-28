@@ -133,27 +133,7 @@ height: 100vh;
 .story__number,.content__story{
     text-align: center;
 }
-content__photo .three, .content__photo .four, .content__photo .one, .content__photo .two {
-    position: absolute;
-}
-.content__photo .four {
-    width: 212px;
-    height: 164px;
-margin-left: 250px;
-    margin-top: 35px;
-}
-.content__photo .one {
-    margin-left: 160px;
-}
-.content__photo .two {
-    margin-left: -40px;
-    margin-top: 32px;
-}
-.content__photo .three {
-    margin-left: 260px;
-    margin-top: 199px;
-    position: absolute;
-}
+
 .content{
     margin-top: 100px;
 }
@@ -338,33 +318,9 @@ margin-left: 250px;
       line-height: 34px;
 
   }
-    .content__photo{
-        height: 300px;
-    }
-    .content__photo .four {
-        width: 114.06px;
-        height: 84.66px;
-        margin-top: 80px;
-margin-left: 210px;
-    }
-    .content__photo .one {
-        width: 137.2px;
-        height: 221.97px;
-        margin-top: 50px;
-    }
-    .content__photo .two {
-        width: 125.36px;
-        height: 154.86px;
-        margin-top: 80px;
-        margin-left: 80px;
-    }
-    .content__photo .three {
-        width: 137.2px;
-        height: 205.97px;
-        position: absolute;
-        margin-top: 155px;
-        margin-left: 220px;
-    }
+.content__photo img{
+    width: 100%;
+}
     .father .row {
         display: flex;
         flex-direction: column;
