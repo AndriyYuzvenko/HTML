@@ -1,0 +1,403 @@
+.header{
+    background: url("image/bg.png") no-repeat center/cover;
+height: 100vh;
+
+}
+.container__picture{
+    padding-top: 50px;
+    padding-left: 165px;
+    padding-right: 165px;
+}
+.container__picture{
+    color: #FFFFFF;
+}
+.container__item{
+    display: flex;
+    column-gap: 20px;
+    font-size: 14px;
+    line-height: 19px;
+    align-items: center;
+    border-right: 1px solid #FFFFFF;
+    justify-content: flex-end;
+}
+.container__picture  .container__item img{
+    width: 19.98px;
+    height: 17.11px;
+}
+.container__phone p{
+    font-size: 14px;
+    line-height: 19px;
+}
+.btn-primary{
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #FF7400;
+    padding: 10px 14px;
+
+}
+.btn-primary:hover{
+    background: #FF7400;
+}
+.container__button,.container__menu{
+    display: flex;
+    align-items: center;
+}
+.header__welcome {
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    color: #D67E35;
+    margin-top: 150px;
+    margin-left: 175px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__welcome .welcome__maine-descop-one {
+    font-size: 50px;
+    line-height: 57px;
+    margin-left: 24px;
+}
+
+.header__welcome .welcome__maine-descop-two {
+    font-size: 80px;
+    line-height: 92px;
+}
+
+.header__welcome p {
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-left: 96px;
+    display: flex;
+    align-items: center;
+}
+
+.header__welcome p::before,
+.header__welcome p::after {
+    content: "";
+    display: block;
+    width: 61px;
+    height: 2px;
+    background-color: #C4C4C4;;
+}
+
+.header__welcome p::before {
+    margin-right: 8px;
+}
+
+.header__welcome p::after {
+    margin-left: 8px;
+}
+.header__welcome nav{
+    margin-left: 196px;
+}
+.color{
+    color: #D67E35;
+}
+.card-img-top{
+    width: 126px;
+    height: 104px;
+}
+.card .card-body,.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.father__maine{
+    height: 400px;
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+}
+.father{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -107px;
+}
+.food {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.food h1 {
+    font-size: 54px;
+    line-height: 62px;
+}
+.story__number,.content__story{
+    text-align: center;
+}
+content__photo .three, .content__photo .four, .content__photo .one, .content__photo .two {
+    position: absolute;
+}
+.content__photo .four {
+    width: 212px;
+    height: 164px;
+margin-left: 250px;
+    margin-top: 35px;
+}
+.content__photo .one {
+    margin-left: 160px;
+}
+.content__photo .two {
+    margin-left: -40px;
+    margin-top: 32px;
+}
+.content__photo .three {
+    margin-left: 260px;
+    margin-top: 199px;
+    position: absolute;
+}
+.content{
+    margin-top: 100px;
+}
+.action {
+    width: 100%;
+    background:url("image/delicious-1866631_1920 1.png") no-repeat center/cover;
+    height: 357px;
+    margin-top: 122px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+.action__description h1 {
+    font-size: 52px;
+    line-height: 60px;
+    color: #D67E34;
+}
+
+.action__description p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.action .action__description {
+    margin-left: 165px;
+}
+.action__button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.hamburger__cost{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    line-height: 30px;
+}
+.hamburger__two{
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+}
+.hamburger{
+    margin-top: 50px;
+}
+.number-hamburger {
+    background: url("image/bar-1869656_1920 2.png");
+    height: 1034px;
+    margin-top: 152px;
+}
+.number-hamburger__one {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 98px;
+}
+.card-img-top{
+    border-radius: 50%;
+    width: 300px;
+    height: 231px;
+}
+.number-hamburger__photo .number {
+    position: absolute;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background: #D67E34;
+    border: 7px solid #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number-hamburger__photo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+.number-hamburger__to-order{
+    width: 350px;
+    height: 510px;
+}
+.number-hamburger__maine{
+    margin-top: 138px;
+}
+
+.reviews {
+    height: 550px;
+    background: #E6E5E5;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.none-two{
+    display: none;
+}
+.reviews__content {
+    width: 920px;
+    margin-top: 104px;
+    text-align: center;
+}
+
+.reviews__content p {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.reviews__content img {
+    border-radius: 50%;
+    margin-top: 75px;
+}
+
+.reviews__content h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    margin-top: 17px;
+}
+
+.reviews__content h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 9px;
+    color: #000000;
+}
+.img{
+    margin-top: 20px;
+}
+.footer {
+    background: url("image/st-826688_1920 1.png") no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+.none-one__two,.header__menu-mobile{
+    display: none;
+}
+@media screen and (max-width: 575px) {
+.margin,.hamburger__two{
+    margin-top: 20px;
+}
+    .number-hamburger__maine{
+        display: flex;
+        justify-content: center;
+    }
+
+  .hamburger__cost{
+      font-size: 22px;
+      line-height: 25px;
+  }
+  .none-one,.container__item,.container__phone,.container__button{
+      display: none;
+  }
+  .none-one__two,.header__menu-mobile{
+      display: block;
+  }
+    .action__button{
+        justify-content: center;
+    }
+    .action .action__description{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  .action__description h1{
+      font-size: 30px;
+      line-height: 34px;
+
+  }
+    .content__photo{
+        height: 300px;
+    }
+    .content__photo .four {
+        width: 114.06px;
+        height: 84.66px;
+        margin-top: 80px;
+margin-left: 210px;
+    }
+    .content__photo .one {
+        width: 137.2px;
+        height: 221.97px;
+        margin-top: 50px;
+    }
+    .content__photo .two {
+        width: 125.36px;
+        height: 154.86px;
+        margin-top: 80px;
+        margin-left: 80px;
+    }
+    .content__photo .three {
+        width: 137.2px;
+        height: 205.97px;
+        position: absolute;
+        margin-top: 155px;
+        margin-left: 220px;
+    }
+    .father .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .father .row .col{
+        margin-top: 20px;
+    }
+    .container__picture{
+        padding:14px 20px;
+    }
+    .header__menu-mobile{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .header__welcome{
+        margin-top: 100px;
+        font-size: 40px;
+        line-height: 46px;
+        margin-left: 0;
+       text-align: center;
+    }
+    .header__welcome nav,.hamburger__image,.number-hamburger__to-order{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .number-hamburger__maine{
+
+        margin-left: 0;
+    }
+    .max{
+        display: none;
+    }
+}
