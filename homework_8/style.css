@@ -1,0 +1,432 @@
+
+.color {
+    mix-blend-mode: multiply;
+    border: 2px solid #EAEDF5;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.color__produkte {
+    color: #2E75FF;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.navbar-nav {
+    column-gap: 35px;
+}
+
+.Luftkondensierte__Kältemaschinen {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.4px;
+    color: #1652AC;
+    margin-top: 100px;
+}
+
+.Augfrund {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.Augfrund::before, .Augfrund::after {
+    content: "";
+    width: 227px;
+    display: block;
+    height: 8px;
+    background-color: #EDEFF3;
+    position: absolute;
+
+}
+
+.Augfrund::before {
+    top: -35px;
+}
+
+.Augfrund::after {
+    bottom: -35px;
+}
+
+.ENERGIEEFFIZIENZ__IM-FOKUS {
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2.42px;
+    color: #1652AC;
+    margin-top: 27px;
+}
+
+.ENERGIEEFFIZIENZ__Anschaffung {
+    font-size: 17px;
+    line-height: 32px;
+    color: #45494F;
+    margin-top: 23px;
+    width: 447px;
+}
+
+.modernste__standards {
+    background: linear-gradient(180deg, #163DA2 0%, #003584 100%);
+    z-index: 1;
+}
+
+.modernste__standards h1 {
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2.42px;
+    color: #FBFDFF;
+    margin-top: 151px;
+    margin-left: 187px;
+}
+
+.modernste__standards p {
+    font-size: 17px;
+    line-height: 32px;
+    color: #FBFDFF;
+    margin-left: 187px;
+    width: 496px;
+}
+
+.unsere {
+    height: 700px;
+    display: flex;
+}
+
+.unsere h1 {
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2.42px;
+    text-transform: uppercase;
+    color: #1652AC;
+    margin-top: 91px;
+}
+
+.unsere p {
+    font-size: 17px;
+    line-height: 32px;
+    color: #45494F;
+    width: 556px;
+    margin-top: 61px;
+
+}
+
+.unsere img {
+    margin-top: -100px;
+    height: 700px;
+}
+
+.content {
+    background-color: #FBFBFC;
+    padding-bottom: 82px;
+}
+
+.content > h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 4.42px;
+    text-align: center;
+    padding-top: 67px;
+    padding-bottom: 42px;
+}
+
+.content .ten-blocks {
+    display: flex;
+    justify-content: center;
+    column-gap: 9px;
+    row-gap: 9px;
+}
+
+.content .item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    width: 394px;
+    height: 136px;
+    display: flex;
+    align-items: center;
+    padding-left: 27px;
+}
+
+.content .item p {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    margin-left: 31px;
+    display: flex;
+    align-items: center;
+}
+
+.HAUPTMERKMALE {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    margin-top: 57px;
+    padding-bottom: 71px;
+}
+
+.HAUPTMERKMALE .row > h1 {
+    padding-top: 43px;
+    padding-bottom: 71px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 4.42px;
+    color: #020303;
+    text-align: center;
+}
+
+.HAUPTMERKMALE .row p {
+    font-size: 17px;
+    line-height: 35px;
+    letter-spacing: -0.4px;
+    color: #45494F;
+    padding-left: 52px;
+    width: 495px;
+}
+
+.content .image .photo {
+    display: flex;
+    justify-content: center;
+    margin-top: 29px;
+}
+
+.content .image .photo button {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 21px rgba(64, 68, 75, 0.14);
+    border-radius: 8px;
+    width: 126px;
+    height: 78px;
+}
+
+.GLYKOLWANNEN p {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 40px;
+    letter-spacing: 1.42px;
+    color: #FAFBFE;
+    text-align: center;
+}
+
+.GLYKOLWANNEN div {
+    background: linear-gradient(180deg, #0C5CD6 0%, rgba(0, 56, 140, 0) 100%), #004FC7;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.21);
+    border-radius: 12px;
+
+}
+
+.footer h1 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: -0.4px;
+    color: #1652AC;
+    margin-top: 146px;
+}
+
+.footer p {
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #464C53;
+    margin-top: 73px;
+}
+
+.footer img {
+    margin-top: 141px;
+}
+
+.footer .row .col-12 button {
+    background: linear-gradient(180deg, #0C5CD6 0%, rgba(0, 56, 140, 0) 100%), #004FC7;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 4px rgba(48, 67, 133, 0.5);
+    border-radius: 12px;
+    width: 306px;
+    height: 69px;
+}
+
+.kontakt {
+    display: flex;
+    justify-content: center;
+
+}
+
+.aaa {
+    display: flex;
+    justify-content: center;
+}
+
+.kontakt button {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+    margin-bottom: 77px;
+}
+
+.maine {
+    margin-bottom: 12px;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #A3ADBA;
+}
+
+.footer ul {
+    margin-top: 50px;
+    margin-bottom: 54px;
+}
+
+li {
+    list-style-type: none;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #9EABBB;
+}
+
+.black {
+    color: black;
+}
+
+@media screen and (max-width: 575px) {
+    .footer ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .maine {
+        margin-top: 12px;
+    }
+
+    .footer .row .col-12 button {
+        width: 100%;
+    }
+
+    .footer h1 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .footer .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .footer img {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .GLYKOLWANNEN {
+        display: flex;
+        row-gap: 10px;
+    }
+
+    .none button {
+        display: none;
+    }
+
+    .xxx {
+        display: flex;
+        justify-content: center;
+    }
+
+    .HAUPTMERKMALE, .GLYKOLWANNEN, .footer .width, .kontakt {
+        margin: 0 auto;
+        width: 95%;
+
+    }
+
+    .HAUPTMERKMALE .col p {
+        width: 100%;
+    }
+
+    .content .item, .image > .photo > img, .content h1, .width {
+        width: 95%;
+    }
+
+    .unsere {
+        height: auto;
+    }
+
+    .qqq {
+        display: flex;
+        justify-content: center;
+    }
+
+    .width p {
+        width: 100%;
+    }
+
+    .unsere .width {
+        z-index: 1;
+
+    }
+
+    .position {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .modernste img, .Luftkondensierte img {
+        width: 100%;
+    }
+
+    .ENERGIEEFFIZIENZ__IM-FOKUS {
+        text-align: center;
+    }
+
+    .modernste h1 {
+        margin-top: 50px;
+    }
+
+    .modernste p {
+        margin-bottom: 50px;
+    }
+
+    .modernste h1, .modernste p {
+        margin-left: 2.5%;
+    }
+
+    .energieeffizienz img {
+        margin: 0 auto;
+    }
+
+    .Luftkondensierte .Luftkondensierte__Kältemaschinen {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .eee {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
