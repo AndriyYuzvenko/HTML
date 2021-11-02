@@ -1,0 +1,27 @@
+@media screen and (max-width: 1200px) {
+    .lost .none-line {
+        display: flex;
+        justify-content: center;
+    }
+
+    .lost .end, .line .ewq,.lost .ewq,.class {
+        display: none;
+    }
+    .rew{
+        display: block;
+    }
+    .carousel__two .card{
+        height: 250px;
+    }
+    .poi {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-two_padding .three,.header-two_padding .five{
+        margin-top: 15px;
+    }
+    .navbar-nav .nav-item .nav-link.disabled,
+    .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle {
+        color:red;
+    }
+}

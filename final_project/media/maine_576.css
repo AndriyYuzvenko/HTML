@@ -1,0 +1,104 @@
+@media screen and (max-width: 768px) {
+    .bv, .class, .header-two__margin .nine, .header-two__margin .eight, .header-two__margin .ten {
+        display: none;
+    }
+
+    .header-two__margin .row {
+        margin-bottom: 15px;
+    }
+
+    .carousel .clutch, .carousel__picture-two img {
+        width: 147px;
+        height: 125px;
+        margin-top: 15px;
+    }
+
+    .carousel .describe h1 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .carousel .describe h2 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .carousel .describe nav .item1, .carousel .describe nav .item2 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .carousel .describe button {
+        width: 124px;
+        height: 34px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .carousel .describe {
+        padding-left: 15px;
+        margin-top: 15px;
+    }
+
+    .carousel-item {
+        height: 240px;
+    }
+
+    .carousel__picture-two img {
+        margin-left: 15px;
+    }
+
+    .carousel__picture-two .action {
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .carousel__two .col-sm-12 {
+        margin-top: 10px;
+    }
+
+    .buttoms .one {
+        width: 164px;
+        height: 36px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .buttoms .two {
+        width: 82px;
+        height: 36px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .buttoms .three {
+        width: 156px;
+        height: 36px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .lost .linee::before {
+        content: "";
+        width: 1px;
+        height: 20px;
+        background: black;
+        margin: 0 auto;
+        display: none;
+
+    }
+    .lost .ewq{
+        display: block;
+    }
+    .maide576{
+        display: block;
+    }
+    .maide576none{
+        display: none;
+    }
+    .lost .none-line{
+        justify-content: flex-start;
+    }
+}
