@@ -20,8 +20,9 @@
     .header-two_padding .three,.header-two_padding .five{
         margin-top: 15px;
     }
-    .navbar-nav .nav-item .nav-link.disabled,
-    .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle {
-        color:red;
+
+    .container-fluid > ul{
+        display: flex;
+        flex-direction: revert;
     }
 }
