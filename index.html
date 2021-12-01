@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Title</title>
+    <style>
+        .carousel-item {
+
+            height: 100vh;
+            margin: auto;
+        }
+
+        img {
+            margin-left: 150px;
+        }
+
+        .start {
+            background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBUVFRUYGBcaGhseGxsbHB0hHR0bHRobIBweIBseICwkGx0pHh0bJzYlKS8wMzMzGiI5PjkyPSwyMzABCwsLEA4QHRISHjgqIikyMjIyMjUyMjUyNDIyMjIyMjIyMjQyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAJ8BPgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEHAP/EAEIQAAECBAMFBgQFAgMHBQAAAAECEQADITEEEkEFUWFxgQYTIpGhsTLB0fAUQlLh8SNicpKiBxUWMzSCwkNTY7LS/8QAGgEAAwEBAQEAAAAAAAAAAAAAAQIDAAQFBv/EACsRAAICAgICAgECBgMAAAAAAAABAhEDIRIxE0EEUSJhcRQyQpGh8IHB0f/aAAwDAQACEQMRAD8A87lyUqd1tQs4VXhQUixOGVooKDsCk/IsbcIKCaVS3QxYhP6RXiD9Y9ZRdnkPLoBVhyHCs3kfePlUHhBPO3qIYFKhYBPKIhKjuHWH6F8v2LcyjZIEQMuZZvID3hmJSQfEpJ4RNSkhgBTp9IFX2/8AI3l+kKE4RZi/uyn8xfmBB/fhmIB4fdojLmpBcIB5hJ9wY1JdG8rfaAEpaxAPEk+0X+JCilYCWFQXB32Ju26D8NiloLoK0mtlEM5em6BpwBUVKcnUqWSTCrktm8iemChct3Dg9fYpjqpiSbl+BSPRhBktUsCgPr8orXldyH5s0Hfejc19MGmS0EEup9KA14+OmukUpl7/AET+8HKyGyfX9oihhTIT1/aBW+xvI66IYUrQlaUqUyruOdnBY1uGMcRISD4gsgagn5walaWygX4O0fGS1Q3qIKh9E3lfsjL7r8staluMpK6PxcPdrecTViZhUTXkVFQ4O7g+UDBBdiB5wZg5ckD+osA7khzS1SQPWFtozkXSNg4qcgTEysySWBTlHs1OMWo7L4xIdMlV6EMT6V6xqNmdpcFKRkQpW8guX33LV4QHtPtyGyyktV3UfKgv1MS8km+i/CPHb39IExX+82BVKNdRKR/qJctzgXZOy5k6aAtEiWEklREuVm6AAvzZqwp2lt+bOUSuYSNEiiRyGvO/GKcBthUtYUmrHffhygctejbT1dHog7KYJK0q8YUL5V5XJ1JGt7MKwVhMDhVlxLAWl2uoEnVQsT05RjJW2Z89QAcOWJ0D3rG72Js1ASRUuP8AmOHNvMU5QsvxXZSElOVJdEMRhJCBkmSkKBsSgNV3ALAj94TT+wkhSiRMWkNZkEjrQkU1jSz5iZbIYkGp0vu3Rw+FiglSS2jDh1ialJdFuK9mTV2DSrMJc8lWgWNG1UCfNukZvH9mcTKUpJlKIBFUpKgXsQRceUepqmhKwcrKs5Nxw6GGS8plhSr8NOTWiizyXYjwp9aPEsP2dxCyMsqYeaSOGsN8N2LxJWQvKhIdjmqTpQOR1GkenID/ABIUW3mpF/aK52LSkGgYWep9Y3nl6QPCvbMBg+ws3P8A1FoCHL5CSqlmzD7bWDD2Ck5lDvl70uwYHeSKniGh1jMSoAqYsKloVT+0ssTAfyt4q1BApzg3N+xJShDTEyuwkwk5VhQDsGTXrmD+UQ/4OmpDFCFENVwPnXnXhDjEdrQkHIkc/wBniqV2z8HjTmXv0ub6xucl9EnOL1bFczsxPDNhxUn4TmaupAoK7xxitewMSyUjDE5XZ68TQkE+sarBdpcOoMpK06kiodtwreDZfaDCFwZqkt+Ypb3gvLL2gxjB9SPOZuycQLyih2/KQN1rQH/u6YC3i5CPWD2gwZDGaFD/AAv09fWAMVtfZ5/IiZWoyofjQgVeCsrf9Izio+0edoQtJIFCL1D9K1iiaD+YHqNddY3idt4NBeXhHULEBF+Bqx4iFGOxec1loZyQCorZy58Va9YusknqiLcY7uzMBJu/WrR93qt/tG+2n2YSmTllArI+JP69xADs3y4Rjl7NWksQ3l9ISFS6NL8ewM8T7x0Ja6qboJnYFaSxSxoWcWNvT3jqMAp2KFcnr7Q9C2vsEM5KbB4kJ7iifOLpuCKT/wAs03vEe4WLI++sLtB/FlPeK/SB98Y4pSzr5ftF34edTwkO3rawj78DNP5T5GNt/ZtL6IpB1NeMfAnf7RcjBrG/llMXq2TOv3aw39hHuIboW0+gJaj9mK1Hh6QcvZswXTMHNJHvHE7JWqyVnkkmM02FSiuxdn4/fSI/iWt6w0l7BWtQSlCybNlN/YRBWxiHdKqUPtcRNqV0OpRoWnEHefvhFKphe8NDs8C6VDz+kR/BDdAeKb9m8sEAImmOEk1v98oaJwo3RxWE5QfEweaAtKVfp9Y4JKj/ADDP8KdwiKsITeC8QfPEWKpQkdI4maBYQerARSrBmJvFJDrLF+wjBY9cxQlqXlBo+4fSPQ9jyZyVpyYgTU0zDgAwq1OUeaS5Ckl4bycXNyhHeTMu4Kbza4heEnoHOMJWj1SfNlpCjNyJexdlHTrVvOA17ckSnSZiC1/ELR53iVlYOavMqLV4lvSA1YEXblcRvC/Y38WvR6krtBIVL7yq0akAsm1yLNxg5G0UkMFJCSCQcwPzjyJOGyjK1OAVX0iwoTq/IJA/nygeE38W76PR5u3JUpyua7Fiw4brkWtC7afaXCJ8SSqaWsmgfi4+sYQoeySfWOiUdEgHkPrBWIWXynQx2l2lmzUKl5UplvYCtwQ530uAIz7mDU4cqufvlEhgd8MsbIvKrtsBS2/3iRljjBowQiX4Ub/aD437F8sfQuChoCTz+kSSFHT76vDJOGTqfnFyEBJBBtoQCD0IhljA8yF0tKjr6AfKLgTRypR5+lIYYdKEEliXBBzbiG09osR3AQRlVndwqlKWy7n9opxoR5UxZ3pdlAjkbc4qnki4374MnSkk0UR0/eOKQg8feM0zKcT1sLDP9BFc7CypjZ0JVo5Yt10gGYFoqyjVrdKCCJAJ8RDbnFY4Krdnrt8tNHy9jylIMtvCSC91Aj+4jdSA5fZuTLLhy+jjT1H78IbIS8W9zA5tewvFB7oTY/YMqaC4VqaH0FDCWd2VSFMlMxQ4TJY9ClzTXfG1TLo7RWEVr0aMptAlhizz3A4KUoqaRNmNlDd4zg2sgEBt8aPC7FQMxEsoFQ2d6bxdqgU4RoRIYkgXrYecUz5aiGB5wzm2SWHgre/+BBiOzqWZMxSRaqgWcvqm0AL7Nqek5KuOUW86RqF4dQDMBxId+NaQOZbPb75Q0ckl0yM8ab2jMYjs5NoEJSq1SpIPtE8PsLEWyo/xeHrx9PKNGXDEkpezBzpvgeZi1jjepBB11GvSH8knonxxx27LcGk4dKUBBamZTAOdSwEHBCVkkIHi1ysd/Au8ASdqKA8WYcDWC0bUlhgogg2IL8NIlLl9HRCeNqr0Itr7Cm/FJmLa+RS1f6VE+h8zGPnkhRSs+IGoIIL8QQ8ep/71kJH/ADE+dfIXgPEYnCTHClSlPpMGm4Kag6xbHlmu0Qy4cTepL+55u6dVp9fpFstCT/6iRzdv/rGrxPZXDTFZpUwo3pSoKT01HnA8zsW1UTARx96j0ivmX2Rfx/rYnl4BJBImymH93/i2b0iCsGnKVZwQOB82IFLecM5nZJQ/SocKk8gT84AxWwMirMlnJdCTxAClQyy37EeBx20wNchA1PQH6CKVIRoD1ENkbKkEB5pSdxKVeoU0QVgJCbzCovRms3AKrwg87Eca9ioJG5ug+cSKmsPaGHcSdCr0+kTlSEGxU/BvnrB0Sc9i3MdArzixCVN8Pmr9oPRhSoskKP3yglWzgGYKO+hofKNo3JtWkKRn4NxV+0TOY3WkefyhijBE2lk+Z+UEpwKQA8v/AFa8ikRvxRk5S/1iRSXup4rVIG8xpJeATcylHd8PziteBe0o+g9oynEzjNK/+jPiV9mPsnDyh8dnK1lgcz8hHDs7dl/zQeURfz+mIO5J/eJfhjD0YAhyQkNxB9AflHMqQbpA/wAJ/wDzG/EVyku9CQYcx0SNIcr5uNKH5piQy0fW7IFOFaQb/QCk2Jfww3xw4cb4fS1Syo5gAkXcBzuarv7RXNwyVVSl0irp3DUi46xlJe0G32mIzhxx9YgcNzhqcK2jDeafzEO45w+mDySR6CD5axMRSEGOlYApvjyT6kuQf4iaVl6wPLXF6C+oP7wrMji5rCkWSEOQXrA6hFIxCkHjYCNQLGaVs5e0QyKJcUfXSFaJx+EnW+kMErWQAD9841Ua7C0IYZTXnaIz8EkhxQxAKU1fKLkOaaQAuKfYum4BfP71ij8IE/FflDxBULwJjwCg5gza/KGU30RnhitmfnLClKSiWCA7qWaNdgLk+ULDgJk0uolKeNT/ADDcr6CPgthzjoTa6POliUnv/wAEM7ZqEkhJUrlpweBJuGy0KSPvlGulWoBw+sD4nB56kA6UrDLL9nPk+FauLMeVsaE0guRtSdLNFq5KJPoY0yOz4KbuoWDBveKRsAhQVkTlcZk1LBx6OPWC8sWCHxM0drQNgu0hI/qS3Gqk6c9PWGWG2th10zlJ3KHzEX4jZcqZQoZjoG46fe8GJr2BJUFMitDwo1h0txMSc4P1R6MMeaPtP9zgMs17yUR973gabNkoIfua0qlBJ9HiUzsxKykEEcQT7bgdIvkbLkoFJYS3ImmtXIheS+w8cj7ikKJ2MkJNJUpStAmWPYUgrZ6pK0FYlpADuMo0FWTv6RHG4BHjWSvxagk72Dah9OMZuRMXLVmC6U1FeFKgxVfktM5J5Xin+SVGnXjZaEulCsumYADoHcDi0BStpy0qORKlAXq6dKhJFQ9H+UKJ61zSVLUuxy6JFbDRoHGHUTlFdd3PfDLHrZKfzNrijVy8XLVqlyWAINdzUgwoAuQOIsIxq1zwaqmU0fycfdoumY6coXWxLuSEuKC+vLjAcGOvmR9o1iAhVc8ttXr87RfPmy6MsJPDXoTXzjHbMKUhQKO8o+VmAoXIJIc2emvCBZmKKfiCnp4a2ajsXs1GtCvHvsf+MpJpdm2XNlC6pRpr4T7QHiNoYV2UVf8AbXyasLpOIlqlkLQlw3iG5NQa1q4gHFrQqiUtV3BP1gxg2Lk+WopPX7ezTKwUlQ+Nns5FfMxSNjSlGiwWuM8IhizRDZ5b/AvxAsXfgb1ixWAQSo5AlIJICVlJIe6RMooC1DpGqUe2FZseRWopjgbElB3UnqXiubs5AIKQk8UkH0IhKHLd1NW5NlLtSxF34ilIYScHMOVEyYpKlA5SAFJLaFwX8xB5NdsaLg/5Yln4EV8XklJ9SKQLNwiUj/qAH0APskMdY7idn4pBZircpCE15sxHl1hdjJkxBHeJyuKA5gWtqXFXikLfTIZKX9LX7klyQ7Beb/E9uoMXDu2AJSSPzBy/UN6wsXMcZsqWdn8THr93isYpvyCvP5mKO2c9tekegguKcY4EOI6lThmrHFzGFP28484+mK1lnF/lxizDLbWBZ04KD+fyJjiFsHFRBrQt0G4mYnWAcTPCwwAprvimZNJvE5Oj0G8XGoIg1QHKw3CyxQs5avpeCSulIGSsClz91aIpm1I3QjGWhjLXXfBYQ4p5QCg1p90gmXMLA6fOFGReFGx84C2oAUkZmIDtvg1BzXrGf24t1pTWDBXInmlUWAoU5r/EWLL1aKku7C8MZEpkeI6uwjok0jhhBtUdkyiUuN0WgAC7mITMTutFILxPstSh0HYecxgheIYhUKUKrFmIUaBgHHH1hXHZSM3xL8RinUG3xUNoZSTvgOWhSy1uJpSJqwqWBchqMLw3FdCOUntDEYsKBJNT9YrGKAcCvOFWdrvBmEk561A0peDwSB5JN0uwXaOMzJKAkqJ0TFeD2KlICplVNb8of7vDpakooEtFHevDKTSpEJ4E5cp7fr9BdjMCSkgeQhQvDLA+DkavwsY1IVHFqFGEPHI0c+X4sZu7oxqlKq8ccQ62lspyVJI4iM9PSQ50H3aLxkmrR5WTDKDqRdnaoivvVio+dYG/EK0Dep8o6jEqBq5++EazKDSCk4hRuN78QQQRlOtbx2Xgs60JQrKFFiVF2fgwfz1iheJT+YEffnHwnfoL+8LxXpjxm9KS0WLEyWSlaSGLVBBu1rwVNU2Ur8aS4IFxrcX48zvodsbEmYMk3xgEZSoZik7gb6QdJwyXUhaBkcsHUQa3d2cWe8SlOtM7cfx0/wAovTEyMTKlgFEpS3qc1gdGLCjvd9N0X4nGoRLlrlqWlRKvy6PTXmGb6w5mbCRlOTw5mzMsgsH1O6lOEZLbOyFypigxyP4VXBBsH3wsXGTLTx5Ma2tfp6H+zu0Cm8UxJAdnDE7rUhvL2xLWEhxW4IcV+vlSPPpeFp4Vp5al92/94Jl4rKCTSpAyuFJN2JNxa+7zLxpvQIfKnFU9o9B7uXMSZakDKRoBTcQDTT0hFiexyqGVMCt+YNyIpFex9sVyqU+uYCvFwLDlGgk4gKssAs+jEPehifKeN0mdiWHPFNoDmrygvC1eNZQeoBqHiPaHHoR4QkBRGig/+XNWMsvF+JyQeBt6GKY8fJWUy5lB0bKTi0qJDskkM5PWjGsSnrTRjpff0jI4bFagtppXpu1gkbQzNlUkU/UPb7tGljpmjmUkaREsNVTH6RyetjSti50tClM8qVkzOw06fJon3S9aDiRQ8vSE4/ZTl9IZZ6ksQwep1pY7oimewKq62Dv4qMRvL14GA1qITSrmgswamg400a9okUNLdBqSxa1mBbc933wtB2HScZZtYb4bEA38ozQlqyoJBBNQOFHhpIm5i7/fHcawskikWzQKnUvCnGkTCwDtrF6V0rbhA8qYwINKn+XhY6NNWqK0oy3S7a89RxirEYkC1oo2htJKXD9BrupGdxW281bC1GsBdt0VinLZCclBUPlYkCpNI6raEvL8QjG43awyfF6whO1iCQ/2Yo4pdshHJfSPWdnzwS5LK/TqOkNcr1LP6s8eW9mdu5ZgQTRR0rU214eu6NTN26lJa1H939jEpRt6OmE1W9GvmAUe3nCnFIGbWKNibVE1RLsPUHcRoeF6Q2QUKdy/tCr8WO6ktCeUhKlKCyQzNvf5QajEBCMo0iGNQlICQGq774VzJ70iqXIg1wf6hUzExUMVxhfiVqZnY7jCwY0veLRxWjizfI4yo1ErEPrFyZzB4z0raAl8Tvg3AYqXMzBRIIDity+kJKDQceWMnV7HWGld65KmO5oX47YoK7H0bnFsraaPgQz7t5hhh5wNVXq4As3vEuUoM6ZYceVJPdGbxPZ1YBr4dCB58oBwnZmZMPxMN7Ex6CjFaN7V5wJiMU5AFHtyjeWTE/gMcXabr6M0OyQCazXVX8vh4fzAitiTEqDBNSAC7eVNPt422lBXlpyiSkJUBmT8O6lecZZGgy+Djl+gBJ2cEIVnJqNVAuTSjJFbQLNYKJZmYZibnQb3h5iJaCggA1ahhZiJaQPhser2vp5axNO3stLEoqo+iM3aKEJHiDmz0EC4bb6ZhKSAoWbw16EuYzG2p0wzCQxs2W4NaAnc1WgNM+dLYrSa28/rFlCNbOKXyJt66Ruzs2RNYplpBFaUrvLfOkItq7FmJdmVmJJTZ/ViWevpFmw9oqmEFiaaIN9XMaWbLQsJC8rkAi7GnGxhOTg+y3jjmjdU/wCxg1yzJIXLUpNHBrSzhwGPk0FJ20aFKpQJfNmQU1e9Aa/TpGixez5S0hKg9d5fz4QnxWy8NLqyqn9X2YqpxktkHhnBtp6/cIx2FlLCj3cxTm6VMOoUR60heNhIDGXKVXesci9G8njU4Ts/JlPMQkBcw+IuoudA5NhoLCGIUoMAAwDUZn5axBZJI9V4Yt2Yyf2XMwAMEgPqoepQM3rE8N2ZUBQIz0HxralqBPItvjX51hJ8LnnpFJUtmZSeR+h+UB5JP2ZY4r0ZqVsCakupSQrel1MPJ/SGUjY5bxuUkuSE0LV1Y+cN0uB4iT5/ZiK8cgfCkqI3A5q8Yzm2MoxQCcAhiAokbgz+grAq9nD8iFlxdTAC1w4P8Q5lLzB3PJQY+sVTw9wAeNB/EC2GkJZ65STlUlGVIPwrVmJBpQkPURBO0pIsiYnVxaupYmGFkDOsIINgMyWO8KSX1s0fScBhJpBWmVMUP/jSCN8EACnaySDkIJBsSnXec3yhlhsXLUlLpqoVoVA8iAXHWLF7MkAUlymoXCBYV0EE4dKV+EKIf9Jb9jCjAYwsospKJaiC/wAIKh5hxFK9mJdpaRL3AISn2EMsTs8FDArBBoaKL+XrcRYmUpITmqreaP8AOAakLE7IQsnOlBLfpSTyiub2WkLSlCpaAA5HhFORADQ7SgUJIfcHMQE1FnU77tOEEGjKL7F4YskJVLKW8SFeI/4nDHoARFCOwMvNTEzamoUEuzuwIZid44xrUgvRTVsU/N4hMmIclRS/Nq7maNyYvCL9CHZnZsSE5UzSQpTkqBSqlmplNCp2rW8GImqSVIeoBLszD6Q5w02WG8JBO56/IwQtUsVOZmtloB8rQVP7DwXoxmOxRsXhckEVUdxEadeCM1SlE5kCtiCw418hAeN7Py5gdM1SX0JSG3A0c+mm6OiOaK0c2TBKWxJiVhSS5NBpUvpTXdWEGKmZalx0+QjUp7MzZalETk5GHhTUgVdgU+pjsvsmiYyhOmMQGCkUfc9ukVWeMVpnJP4s5u6MYjGFRYWguTNINDDzavY8y0rmS1gs3gIPVi8KNh4N5hVPS0pALuWc2ADXL6QqyKruyE/itOqocbBUkqUpnUkOHBJcEVDHnD2XiVKWyaaPxP7e0ITKmrmFMuVkQRQBTgCtS1SeugjZ7Mw6kpSkiwDk3JZolkkm7O34uNpV/rODCTGASxvZvnpFeGlqSS/UH7pDJSgKRWsuTpueJJna4o+lKs/WL8zE1BhYucQSnjWL0zXpGaMmFlbAFoWYqbMW4Qk5hYg8fMU1eGUtAUG4RQZZs5HKAgTTehEjZYClGYJYBul1EKejmhy1Y6RRjsLMISlE0hIaiEkaWKwoOKaDXWH+JwrhiSBR8tCWJu1xEcRs9K0lKgoBiAUlil/zAbxvhuZz+BJNJGVxGBzBIE6WhYbOVKIXmAqXzgkHc0G7OVdHed41DlCmfc6lKO6x6Revs7LSUKGdZAZ1Mx3ZgGsKQTL2Ch8wQArQ2awoPu8Zy0COKV3X+QeXKOYHMWZ8iknOd5FR7Qr2nLmTBkEgFIU+bOl3AIYtahtGslbNKQDRPlXzMTmSNQxHANWAp0PL4/JV0Ql4mXX+ojheu/S/nF6kMXDGj3cB98K5UoqbNKytQEFDVBcgc/eCloWhimYC2mUWPUP1hDrCzMJBG/dp1rFWRgfCrnf0e0Cz5Ew+LvMgGodBPR1J8xESrFCWqX4Fg2KlVbVylI84xiaZqw+dLjQBKq03RNC/F8J8lfOM9j8PipaSc6kpGYqCVHKz2IIqA5qNAaWhPM7ZqlrAKFkKsoFSgWBPhJzN0GkK5pOg8bN/KUsEqB0swbrX5iOkFbBSLXNW6XYR5tL7bzFzHAWL3SbBtQAQaw62d/tGlrSVTCpLEBywZ6Vo5ANKvpG5o3FmzOFZL5C3Q+jesVzMHKWQTLAIsQSFcbNwgPDbY7xGZE5C0v8AEQ4NH04c7wxRi5jpASFOLi3OGTtaBR1CAFUQs8iL9YBXgnWTlmBzbMkeor/MNlTCmpGbgL+biBZ2OQhWVRIcv8QccGU/pBAzmGQpPwoKRYkrd+YvH06XRwxPAv6PElYxLgAtzI+gETQsPpwFL83jWahatMwkhOYNd/rAomFJq3IvDggvq50NUl+KbdYpXKTMcEEnifQFVYyYjiV4TGuHCW4gj0p6xzFyUrSXyudSD6m5PWOIwCUl8xB0oL8axYhiGC9SaAtTeYxk37A1YQiXlzKNDYqSqr2IqP2gTAIxASUZ5ssgnIpWUku9F0rvBDW1tDzOjLS+pDl+FYAxE0a+8bjYXOgVCsUgrQuaFpLX8JGrgEV8zaEkyVON1HISTRKA+99DWtYYTcWEqJBamn7QJKx6MwTmSoGtTT0qYPjvsm86Whhs6elCWAWdakVH/b7fxHMPt5SSQqXropxpozg+lI7KkZVZlJeXXxJIpTjX0iGJmBQdKs5YnKzkAaltWrA4DLIxrK2lLmAghgdDb1gU7OlqUD8Sb5QT8iDujIr2/kLZCdbhmZ78t0VTe1xSQBKbmo34Bvn0jdG1PtHoyMOlI8DBrNc846nFAJ6tb56x5xhO2y3IXLoa0WXLc6e0DYntNiVKzISkJP6uO4lYA8oHJFEj0sYsFQSCCpntXl974Gx+0k6qY9KR5SdpYwkLTPSirUbXhmVu9t8D4/FYou0zOPzGlVF33UNxQQylFPYGm1o9NVtJD3FL14XeLcNjAp8pctod5HnHkPf4lIBBd9OvOCMFt3FynyEJdnF7EeRhnOLWhFCV7Pa8Is0JUK8fpBipivto8vwXa/GZP+lTMULKcgHoxrazQZs7tnMKgJmFmAkFxLryIBau8dYlyRXgz0D8QWZi5iYWb6jdGdkdpJS0+OXNQAHdSVOat+UEvW3OLcHtuXMVlRNFK5TQ/wCU1gqSfQHFo0MznlN6j3ihZIBfNvAFacDr+0VnFZmFX6x8okMCaPY74wGC4iYoeJKlqZwAw9S9mhVjtoTUlAy5iU5i5AAc0qdeEMsfJUk5kFQFlCpcbgwtU74Cx+GQpIKkFZeihQs1jVxyMFURmpNUnQamcA5KrGwuPpFwmKW6kKUK3ofWgMK1LWzEBtDS/mx6boK2eKuQc1yXLDp8oZlEwKbtSYlbKTM5qQlqf3JURBuGxc1bhutqdTF8/ZaZq8wUSGokkgdCC7cOcEYbZpyqQWZVaApOtKGwgNoyTLsOSwz0HE16G0Z/tBsHCTKqKZS1eL+mvKrMWsAkhRelbuYcTdnqy5StXHdaly5jP4zAzEqGcSw5d1zCC3J/SBSfYzbRnp/YyUhRIxkwBYohnVoQyizMLU9onI2XgJC1pmqmTVirKSg5WfN4Uiou7uOTQ9WiaFePKwDABZLp0uplCIBKkkl5DGvivYVJzKbTjSBxX0bky/AY7CJR/Rl+EDMQEJljiWo5pxtBUrtEmY8tCch3k5Qw4qDPwhdNx6HZa5YS1co+E1s6WIsbQRhBLmEvPKv0pCUpq28X5OBBNYSNo6S5hUt2KFv6KIynnAq9rTFlu6Usj+3WrMQWNjB02X4ClSEk0JUE+EHQkEl/2jMzZy8yu7ICv70JUAG/Uxy6tzgpmY8xC1qRnmSFIZvEVkK8k1EJcVikOSVzgkH4iFMeuQaVvV9I7K2ni5bKyIY8U1PQmp3RejtLLs685/KnKwDbwhme7mnSAZFOHx0pIKu8UhWgKiARbM3eOQ79YuG0MSVOgd6L/mcNufMSOArAeG7RBa8vdpJJqfAC2/MnLpxjQ4TbUsoKUzkqWAKB03r8SioHXUwGFAsrtAW/qy1i4cCnGlxBcjaKJg8Kh0N/oYol4yU5zSlJmKBCwtmLNQ6KorTdFuF2PLK1FRQEKDju1qSxc/kPh329IyA42SxOMUHdBJ3gU5UgdWMBBBCkk2UWYcwzwSjZCMyVS5qglX5jlKRuchPrBUrY6EnxTFFjcFtaABqi1mvDKQjxsymPw8wBSiykWzJsHqKUIjPz5CkqBct6ekeo4iQkPMSxI+ACgB0cA+LWkZ+Vg0T1KIQkAGuUlKdxG6sOpshP4ysjsaWiYpOWYctQAHddGIYnR3rBuKly8PnyrUksUpSolnLP8JcAjWIf0sMrIlLFxRCVE6VKlH2BgfbO2M4OVLFqgVB3u1ICdspSiv1A8VsWXPSlaVSpbeHwnwu3EAAux1vrCabsBSUFMw+CXnAWgFYKjVmSKC/iKqUpB2G21kypUheVJByILJIerpYhT76Ro0Yoz5KlJmd2Ar4VoUkXDArSWIjSSYYSPMV7NmUyKRQVCSMx6UrwG6LZezprFi1B8TPeuUgmu/hG7wGIlf1BOloSTY92kpu9npe8VyESzmShPdTC5BU5zO1lOMg3MNdYSUaKRnZjVbCm5QtMxJAuKAg3oCXIbWKpWzZgZXeAXqxH0L8OMao7PUCBNWyy5S4BBALOLvWmloFmS5gLKBV/hTWujAg+kTb0VSE0vDLOZUxlFmATQqLG6laWJq9fLqMQlRyrSlKhuQp6DQpNeMMFYbJmzoSEvVwoKHIscvIQPtSVLQAFTik5QQAVZ8ps+UCjvUh68oWx6HWzMVKQ4Kkpd2OYMBqWVUfLdAq9vSUqV3a5atM2ZTB+Fv4jOYfDpIfvQpJIosqZx/cXTm6RLDqUteWWyySBlMvMOmX6cYVtBVjrEdqgghMxAylsqgaFLXYhx/ECL2xLWpJSCH/S4KhoPjYmtucU9pMJLMkqEsJMsjNlV4gaDKU6EexG6MxJxolEtLBSpLMomrgObChrTcY0HaBJ0zYq7QiQU90uclKrJWXSWIDJBsxLFjRjSHKP9oMsJBUlZS4BKWLDUnM27RzHm21FgFkBkEuOKmSSr1Fov2XhAQrvwtMsjM7MVEagqv8AzB/l3YvbPZNj9rcPiFZEqL0AdmJegzA0J0eHUwZ6hIUaXa3o8eMSdloPikzkFOhCmUlIN7fELtxOkbbYu3prsqWJjAjOlYqxSzgqFS5tSkBZeL2F47WjRScUlYCS5tZLAV3GJrWhIISfFqVI100aL0rUlWZJJSbgqPo9oLRNQsV6u5joIIWSQpwogFTX372AYAxerFFOULfKoukpDAcCdDHXQoqAIQojc/WgHvBJwa8gqlQDcKa0YvyMYyAZ+1ZyUpHcqUCoguoEs9PhDNziGM2pMYKlygtg5SfjBcBr0o5etoYYuaUhww5/s8KsRiFOFBdTYZXHqaekGjO/sDw3aOUoK/pZli6QCo3AsxLV3RFG0cJMWAqX3d6qKU/+QPvygtMxKSSAlKiGJys92qk010N4U4nsxg1JzKVMCi5Kgo1JLl3SddWgi7LJ2wZMwEpOZjRUspU27Nw8zyhPi+zZSPCqbm4odNNXSXA5h+EGTOyzlBkzVoAAqki28gBDq43h0paJUtaZ0xU0oGYrUgUezAF4G2PSMdicJMlBBM0lJZyEzAOZJHKB5u0SU5SMxSfjd7tRIewjXoxqpwSkIlFJ8TzEOMo3oBNW1zdIrx/Z+WsJYFBahllk1LUQp2tvHSAajLYbHKBBQtaTQvmara8IbYPay84KmWbl8vvp0hTN2OrvRK/EJJdkpUhSVUoPEgKHrDCXhdo4ZecICkg/rQdG/MoGCkBjbG4KUuW8lKZSl/H3aUqKmAcEpFKgUH1hB/w6taVJSWBYuoKABD3JDMz+kFL2pMCgV90lRL5VIBZ6O6QX3OS8OJu1VoIRiEpUlTEEWLH4gR4kkcoD0FMzU7Y8/IpDpmkBISlE1Kd2hIJ6VJMQwUzFSSlpU1SwCMigsgEVcAq8TBy/Hz1UrYaZhC5ayxIJBAoOBo56Q0xGxld0yFlbfrqw1YUc83haGsVYDa6xLUvEI7suMiEjJMIIuSk5gOd4Lwu2CsEJlnIaHPM9AFDK9XZ9ISYrZ3dq8aSlQF3Cxfcat1esdk5xTOwceEO1H6D1gitjg4hKjmz5XHwqAsNAUmgBbTWBcdJmhCky5gKDdOYZq/3AAk8xbWBZ2EWVFSQAbsGt6AxUmZQO4OhBo3IW6NGA2dGKnUcrJDABQTS2jN1Y3MUSZc1S1JmTSkuxGTM1LllME72tB6pqiA7kGlS/vHwlylhlJPMFmO+oPo0YGgZOEmrlrVKmd6E+EgCwY/lNzXSFOIxc0yu5mOnKpwGI4ZW0Z3h3JweT4Vj/ALkDhdnfnEsRglOTmQr9QUmhUxFLkMINgaM5gnS+Va0rO4+jJdRPSnsyk4gkKRMCwUoKmWkspmJKXYpWXDAX13x9iNh4hTkOGq4WK05isI58wjMDmXepOU+hJNhcmwtB2xU1Hs0excaMSmZh0gktmBISChQNbkkggAeElrkRmtv4+UiaAFrdFFUYhbMQQbsYlgMWmXNTMCSliC75iCHFCTYglxa0XbVRg8Uc83NKm/qlhwprOCNAPasRlib9l4ZUA4TGonhQM5pmVqpV4g3A+LdbW0UYracxUlUhaStUtQ8Z8Ssm4G9CD05Uc7H7MYFYAzTFq1d0u3AUGlK8xGu2ZszDiWuVlYEmpAzCr/EPiY1BMBY/1H8iPM8LhZgLqlqAyZvH4SEb0lw72atSIgvba5a0qQAixAKXzAOxUDex4Vj0A7Emp7xE0InSj4pK2SFAsVKBSp6Ftd7cg8R2CKwVqWEqY5QRmSA7A8zR/OEePexuetGWTjTMPeFARmDlKQVCYkvmzOVHMwZzxD6Q1T2FlzpSFonTEMkkJUkHKHJI0Nyakwzkdg0Iyhc5ZINAgNQs9SflGg2bslOFC3WpaFMwVXKau3AvaGjFp66BKarZ5zt7YCMHKdK5q5gDZwkCWlKlNW5BNWY6isLJyJk/DJWRMUpBCU+AlLa+J72Pnvj1rFzpAoAkEi2QMR5aRDDUSkSwMiWCQEgAAUDJcNFXD2SWRdI8WlYaehZyomJWl3CQcwa9vto2XczJyMwE7wlIrLUT8A/9sh7XbdwfdkpBOdLK5CrWNMznjS0XysWP1pAFGCVUPlCyxcthWXif/9k=") no-repeat center/cover;
+            height: 100vh;
+            width: 1200px;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="start">
+                <h1 style="text-align: center;padding-top: 300px"><b>Хвилі на поверхні рідини. Хвилі мілкої та глибокої
+                    води.</b></h1>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/479086/117200/128521_images/1.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/479086/117200/128521_images/2.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/479086/117200/128521_images/3.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/479086/117200/128521_images/4.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/479086/117200/128521_images/5.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/479086/117200/128521_images/6.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/479086/117200/128521_images/7.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/479086/117200/128521_images/9.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/479086/117200/128521_images/11.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/479086/117200/128521_images/12.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/479086/117200/128521_images/13.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/479086/117200/128521_images/14.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/2.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/3.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/4.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/5.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/6.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/7.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/8.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/9.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/10.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/11.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/12.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/13.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/14.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/15.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/16.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/17.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/18.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/19.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/20.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/21.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/22.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/23.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/24.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/25.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/26.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/27.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/28.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/29.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/30.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/31.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/32.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/33.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/34.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/35.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/36.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://naurok.com.ua/uploads/files/3744/13178/13393_images/37.jpg" alt="..."
+                 style="height: 100vh;width: 1200px">
+        </div>
+        <div class="carousel-item">
+            <img src="https://svitppt.com.ua/images/46/45120/960/img11.jpg" alt=""
+                 style="height: 100vh;width: 1200px">
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
